@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "width": 640,
+      "height": 480,
+      "file_name": "sample_1.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "fruit"
+    },
+    {
+      "id": 2,
+      "name": "stem"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 11,
+      "image_id": 1,
+      "category_id": 1,
+      "bbox": [
+        100,
+        120,
+        90,
+        80
+      ],
+      "attributes": {
+        "color": "green"
+      }
+    },
+    {
+      "id": 12,
+      "image_id": 1,
+      "category_id": 2,
+      "bbox": [
+        180,
+        80,
+        30,
+        120
+      ]
+    }
+  ]
+}
