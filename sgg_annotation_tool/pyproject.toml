@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgg-annotation-tool"
+version = "0.1.0"
+description = "PyQt annotation tool for creating scene graph annotations and SGG-Benchmark dataset files."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "PyQt5==5.15.4",
+    "h5py>=3.8",
+    "numpy>=1.23",
+    "Pillow>=9.0",
+]
+
+[project.scripts]
+sgg-annotator = "sgg_annotation_tool.app:main"
+sgg-export-dataset = "sgg_annotation_tool.exporter:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
